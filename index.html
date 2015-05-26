@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+  setInterval(function(){
+    document.body.style.background=gr();
+  },100)
+  setInterval(function(){
+    document.body.innerHTML+="U ";
+    if (gh()){
+      document.body.innerHTML="Don't give a F ";
+    };
+  },200)
+  function gh(){return document.body.scrollHeight>document.body.clientHeight;}
+  function gr() {
+    var l='0123456789ABCDEF'.split('');
+    var c='#';
+    for (var i=0;i<6;i++){
+      c+=l[Math.floor(Math.random()*16)];
+    }
+    return c;
+  }
+</script>
+<style>
+  body{font-size: 700%;text-align: center;word-wrap:break-word;word-spacing: 0px;}
+  body::first-line{font-size: 150%;}
+</style>
+</head>
+<body>
+  Don't give a F
+</body>
+</html>
